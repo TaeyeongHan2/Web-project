@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./Week2.css" />
+  </head>
+
+  <body>
+    <div>
+      <h1>안녕하세요</h1>
+    </div>
+    <!-- 인라인 요소
+   1)span 태그 -->
+
+    <span>Hello</span>
+    <span>World</span>
+    <br />
+
+    <span style="width: 100px">Hello</span>
+    <span style="height: 100px">World</span>
+    <!-- 인라인 요소는 글자를 취급하는 요소이기 때문에 
+     글자는 가로 사이즈와 세로 사이즈를 가질 수 없어, 위의 코드처럼 가로너비와 세로 너비를
+     지정하더라도 아무런 반응이 없다. -->
+    <br />
+
+    <span style="margin: 20px">Hello</span>
+    <!-- 외부 여백을 지정하는 것이 margin 이다. -->
+    <span style="padding: 20px">World</span>
+    <!-- 요소의 내부 여백을 지정해줄 때 padding을 사용한다.  -->
+    <br />
+
+    <!-- 블록요소
+      1) div 태그 -->
+
+    <div style="background-color: aqua; width: 100px">Hello</div>
+    <div style="background-color: blueviolet; height: 40px">World</div>
+    <br />
+
+    <div style="background-color: aliceblue"></div>
+    <br />
+
+    <a href="https://www.naver.com/" title="네이버로 이동">네이버</a>
+    <br />
+
+    <a href="https://www.naver.com/" class="naver">네이버</a>
+    <br />
+
+    <a href="https://www.naver.com/" id="naver">네이버</a>
+    <br />
+
+    <a href="https://www.naver.com/" data-site="naver">네이버</a>
+    <br />
+
+    <!-- CSS 시작!!!!! -->
+
+    <div>
+      <p>
+        <span>안녕하세요</span>!!!반갑습니다. <br />
+        오늘은 <span class="a">css</span>를
+        <span class="b">공부하려고 합니다.</span>!!!
+      </p>
+    </div>
+    <br />
+
+    <div>
+      <p>
+        <span>저만의</span>웹사이트를 <br />
+        제작해보고 싶어 <span id="study">공부를</span>시작했습니다!!
+      </p>
+    </div>
+    <br />
+
+    <div>
+      <h1 class="orange">오늘의 과일</h1>
+    </div>
+    <br />
+
+    <ul>
+      <li>사과</li>
+      <li class="orange">오렌지</li>
+      <li>참외</li>
+      <li>수박</li>
+    </ul>
+    <br />
+
+    <!-- css가상 클래스 선택자 -->
+
+    <div class="box"></div>
+    <br />
+
+    <div>
+      <a href="https://www.naver.com/" class="naver" target="_blank">naver</a>
+    </div>
+    <br />
+
+    <input type="text" />
+    <br />
+
+    <div class="fruits">
+      <span>딸기</span>'
+      <span>오렌지</span>
+      <span>수박</span>
+      <span>망고</span>
+    </div>
+    <br />
+
+    <div class="box2">Content!</div>
+    <br />
+
+    <div class="container">
+      <div class="item"></div>
+      <div class="item2"></div>
+    </div>
+    <br />
+
+    <div class="container">
+      <div class="item3"></div>
+      <div class="item3"></div>
+      <div class="item3"></div>
+    </div>
+
+    <br />
+
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+  </body>
+</html>

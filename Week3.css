@@ -1,0 +1,173 @@
+/* 테두리,border-radius */
+/*
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: goldenrod;
+  border: 10px solid green;
+  border-start-end-radius: 10px;
+}
+  */
+
+/* overflow */
+/*  
+.parent {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  margin: 20px;
+  overflow: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.child {
+  width: 500px;
+  height: 150px;
+  background-color: orange;
+}
+*/
+
+/* display 인라인요소를 블록요소로 바꿔줄 수 있다. */
+/*
+span {
+  width: 120px;
+  height: 30px;
+  background-color: orange;
+  color: white;
+  display: block;
+}
+
+.parent {
+  width: 100px;
+  height: 100px;
+  padding: 30px;
+  background-color: orange;
+}
+
+.child {
+  width: 200px;
+  height: 100px;
+  background-color: royalblue;
+  opacity: 0.7;
+}
+
+*/
+/* 글꼴 */
+h1 {
+  font-style: italic;
+  font-family: serif;
+}
+
+/*  
+p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  font-family: "Times New Roman", Times, serif;
+}
+*/
+
+/* 문자 */
+p {
+  width: 200px;
+  height: 50px;
+  display: block;
+  color: white;
+  background-color: royalblue;
+  text-align: center;
+  text-decoration: underline;
+  text-indent: 30px;
+}
+
+/*  
+div {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  background-image: url("./image/우왁굳.jpg");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+*/
+
+/* 배치 */
+/*
+.container {
+  width: 300px;
+  background-color: royalblue;
+  position: relative;
+}
+.container .item {
+  border: 4px dashed red;
+  background-color: orange;
+}
+.container .item:nth-child(1) {
+  width: 100px;
+  height: 100px;
+}
+.container .item:nth-child(2) {
+  width: 140px;
+  height: 70px;
+  position: absolute;
+  bottom: 80px;
+  right: 100px;
+}
+.container .item:nth-child(3) {
+  width: 70px;
+  height: 120px;
+  position: relative;
+  z-index: 1;
+}
+*/
+
+/* 플렉스 수평배치--->이력서 쓸 때 많이 사용 */
+
+/*
+.container {
+  background-color: rosybrown;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.container .item {
+  width: 100px;
+  height: 100px;
+  border: 4px dashed red;
+  background-color: royalblue;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+div:hover {
+  width: 300px;
+  background-color: red;
+}
+*/
+
+body {
+  padding: 100px;
+}
+
+.container {
+  width: 100px;
+  height: 100px;
+  background-color: royalblue;
+}
+
+.container .item {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  transform: translate(40px, 40px);
+  transform: scale(0.5);
+  transform: perspective(500px) rotateY(45deg);
+}

@@ -1,4 +1,62 @@
-<a href="/Web-project/about">about</a>
-<a href="/Web-project/contact">contact</a>
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Taeyeong Han — Personal Brand</title>
+  <!-- 프로젝트 페이지 루트 기준 -->
+  <base href="/Web-project/">
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="data:," />
+  <meta name="description" content="XR를 향한 다음 스텝 — 한태영의 개인 브랜드 페이지" />
+</head>
+<body data-page="home">
+  <header class="site-header" id="siteHeader">
+    <div class="container nav">
+      <a class="brand" href="./">TAEYEONG</a>
+      <nav class="nav-links">
+        <a href="./" aria-current="page">홈</a>
+        <a href="about/">소개</a>
+        <a href="contact/">연락</a>
+      </nav>
+    </div>
+  </header>
 
-<h1>내 생에 첫 홈페이지</h1>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 class="headline reveal-on-scroll">
+          Simple. Focused. <span class="accent">XR</span>-first.
+        </h1>
+        <p class="subhead reveal-on-scroll delay-1">
+          한태영의 개인 브랜드 랜딩 — Apple처럼 담백하고 선명하게,
+          핵심에만 집중한 포트폴리오 허브.
+        </p>
+        <div class="cta-group reveal-on-scroll delay-2">
+          <a class="btn btn-primary" href="about/">소개 보기</a>
+          <a class="btn btn-ghost" href="contact/">연락하기</a>
+        </div>
+      </div>
+      <div class="backdrop-gradients" aria-hidden="true"></div>
+    </section>
+
+    <section class="features container">
+      <div class="feature-card reveal-on-scroll">
+        <h3>XR/Unity</h3>
+        <p>VR/AR 상호작용, 성능·UX 중심의 실험과 프로토타이핑.</p>
+      </div>
+      <div class="feature-card reveal-on-scroll delay-1">
+        <h3>멀티플레이</h3>
+        <p>Photon/Fusion 기반 네트워킹 R&amp;D 및 실시간 협업 경험.</p>
+      </div>
+      <div class="feature-card reveal-on-scroll delay-2">
+        <h3>미니멀 디자인</h3>
+        <p>불필요함을 덜고 핵심 메시지만 남기는 화면 구성.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy;

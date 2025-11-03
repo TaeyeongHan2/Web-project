@@ -1,56 +1,48 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="color-scheme" content="light dark" />
-  <title>연락 — Contact</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Contact</title>
   <base href="/Web-project/">
-  <link rel="stylesheet" href="assets/style.css" />
-  <link rel="icon" href="data:," />
-  <meta name="description" content="이메일 및 GitHub 연락처" />
+  <link rel="stylesheet" href="assets/style.css"/>
+  <link rel="icon" href="data:,"/>
 </head>
-<body data-page="contact">
-  <header class="site-header" id="siteHeader">
-    <div class="container nav">
-      <a class="brand" href="./">TAEYEONG</a>
-      <nav class="nav-links">
-        <a href="./">홈</a>
-        <a href="about/">소개</a>
-        <a href="contact/" aria-current="page">연락</a>
+<body>
+  <header class="header">
+    <div class="inner container">
+      <a class="brand" href="./">BrandName</a>
+      <nav class="nav">
+        <a href="about/">About</a>
+        <a href="contact/">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="page-hero compact">
-      <h1 class="headline reveal-on-scroll">Contact</h1>
-      <p class="subhead reveal-on-scroll delay-1">
-        협업 제안, 피드백, 구인 문의 모두 환영합니다.
-      </p>
-    </section>
-
-    <section class="contact-grid">
-      <div class="contact-card reveal-on-scroll">
-        <div class="icon" aria-hidden="true">
-          <!-- Mail SVG -->
-          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-            <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2
-                     2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5Z"/>
-          </svg>
+  <main class="center">
+    <section class="stack container">
+      <h1>Contact</h1>
+      <div class="contact-list">
+        <div class="contact-item">
+          <strong>이메일</strong> — 
+          <a href="mailto:you@example.com">you@example.com</a>
+          <button class="btn" style="margin-left:8px" data-copy="you@example.com">복사</button>
         </div>
-        <div>
-          <h3>이메일</h3>
-          <!-- 아래 이메일 텍스트/링크를 본인 메일로 교체하세요 -->
-          <a id="emailLink" class="contact-link" href="mailto:you@example.com">you@example.com</a>
+        <div class="contact-item">
+          <strong>GitHub</strong> — 
+          <a href="https://github.com/taeyeonghan2" target="_blank" rel="noopener">
+            github.com/taeyeonghan2
+          </a>
         </div>
-        <button class="btn btn-ghost small" data-copy="#emailLink">복사</button>
       </div>
+      <p class="lead" style="margin-top:6px; color:var(--muted)">협업 제안과 피드백 모두 환영합니다.</p>
+    </section>
+  </main>
 
-      <div class="contact-card reveal-on-scroll delay-1">
-        <div class="icon" aria-hidden="true">
-          <!-- GitHub SVG -->
-          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-            <path d="M12 2a10 10 0 0 0-3.162 19.492c.5.092.683-.217.683-.483
-                     0-.237-.008-.865-.013-1.698-2.776.603-3.36-1.34-3.36-1.34
-                     -.454-1.154-1.11-1.462-1.11-1.462-.908-.62.07-.607.07-.607
+  <footer class="footer">
+    <div class="inner container">© <span id="y"></span> Taeyeong Han</div>
+  </footer>
+  <script src="../assets/main.js" defer></script>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>

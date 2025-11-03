@@ -1,45 +1,81 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Taeyeong — Home</title>
-  <base href="/Web-project/">
-  <link rel="stylesheet" href="assets/style.css"/>
-  <link rel="icon" href="data:,"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한태영의 XR Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="inner container">
-      <a class="brand" href="./">BrandName</a>
-      <nav class="nav">
-        <a href="about/">About</a>
-        <a href="contact/">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/Web-project/" class="logo">XR_DEV</a>
+            <ul class="nav-menu">
+                <li><a href="/Web-project/" class="nav-link active">Home</a></li>
+                <li><a href="/Web-project/about/" class="nav-link">About</a></li>
+                <li><a href="/Web-project/contact/" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <main class="center">
-    <div class="stack container">
-      <!-- 프로필 이미지를 쓰고 싶으면 assets/profile.jpg 추가 -->
-      <img class="avatar" src="assets/profile.jpg" alt="Profile" onerror="this.style.display='none'">
-      <h1>Design less. Mean more.</h1>
-      <p class="lead">
-        기술과 디자인의 경계에서 ‘단순함 속의 완성’을 지향합니다.<br>
-        Apple처럼 담백한 톤으로 제 작업과 생각을 공유합니다.
-      </p>
-      <div style="display:flex; gap:10px; margin-top:6px;">
-        <a class="btn primary" href="about/">About</a>
-        <a class="btn" href="contact/">Contact</a>
-      </div>
-    </div>
-  </main>
+    <main class="hero">
+        <div class="hero-content">
+            <div class="glitch-wrapper">
+                <h1 class="glitch" data-text="WELCOME TO THE METAVERSE">WELCOME TO Taeyeong's Metaverse World</h1>
+            </div>
+            <p class="hero-subtitle">XR Developer • Unity Expert • Metaverse Creator</p>
+            <div class="cta-buttons">
+                <a href="/Web-project/about/" class="btn btn-primary">
+                    <span>Explore My World</span>
+                </a>
+                <a href="/Web-project/contact/" class="btn btn-secondary">
+                    <span>Get In Touch</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="floating-elements">
+            <div class="float-item" style="--delay: 0s; --duration: 3s;">VR</div>
+            <div class="float-item" style="--delay: 1s; --duration: 4s;">AR</div>
+            <div class="float-item" style="--delay: 2s; --duration: 3.5s;">Unity</div>
+            <div class="float-item" style="--delay: 0.5s; --duration: 4.5s;">Quest</div>
+            <div class="float-item" style="--delay: 1.5s; --duration: 3.2s;">Vision Pro</div>
+        </div>
+    </main>
 
-  <footer class="footer">
-    <div class="inner container">© <span id="y"></span> Taeyeong Han</div>
-  </footer>
+    <section class="tech-stack">
+        <h2 class="section-title">Tech Stack</h2>
+        <div class="tech-grid">
+            <div class="tech-card">
+                <div class="tech-icon">🥽</div>
+                <h3>VR/AR Development</h3>
+                <p>Meta Quest & Vision Pro</p>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">🎮</div>
+                <h3>Unity Engine</h3>
+                <p>Interactive Experiences</p>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">🌐</div>
+                <h3>Multiplayer</h3>
+                <p>Photon Networking</p>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">🎨</div>
+                <h3>Design Tools</h3>
+                <p>Figma & GitHub</p>
+            </div>
+        </div>
+    </section>
 
-  <script src="assets/main.js" defer></script>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+    <footer class="footer">
+        <p>&copy; 2025 XR Developer. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

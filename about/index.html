@@ -1,41 +1,235 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>About Me</title>
-  <base href="/Web-project/">
-  <link rel="stylesheet" href="assets/style.css"/>
-  <link rel="icon" href="data:,"/>
-  <meta name="description" content="XR Developer를 목표로 하는 한태영 소개">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - XR Developer</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="about-style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="inner container">
-      <a class="brand" href="./">BrandName</a>
-      <nav class="nav">
-        <a href="about/">About</a>
-        <a href="contact/">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/Web-project/" class="logo">XR_DEV</a>
+            <ul class="nav-menu">
+                <li><a href="/Web-project/" class="nav-link">Home</a></li>
+                <li><a href="/Web-project/about/" class="nav-link active">About</a></li>
+                <li><a href="/Web-project/contact/" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <main class="center">
-    <section class="stack container">
-      <img class="avatar" src="assets/profile.jpg" alt="Profile" onerror="this.style.display='none'">
-      <h1>About Me</h1>
-      <p class="lead">
-        저는 <strong>XR Developer</strong>를 목표로 하는 크리에이터입니다.<br>
-        Unity · XR Interaction · Photon Fusion을 중심으로<br>
-        빠르게 만들고, 검증하고, 다듬는 과정을 좋아합니다.
-      </p>
-    </section>
-  </main>
+    <main class="about-container">
+        <section class="hero-about">
+            <div class="hero-content-about">
+                <h1 class="glitch" data-text="XR DEVELOPER">XR DEVELOPER</h1>
+                <p class="subtitle">Crafting Immersive Experiences in the Metaverse</p>
+            </div>
+        </section>
 
-  <footer class="footer">
-    <div class="inner container">© <span id="y"></span> Taeyeong Han</div>
-  </footer>
-  <script src="../assets/main.js" defer></script>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+        <section class="about-intro">
+            <div class="content-wrapper">
+                <div class="intro-grid">
+                    <div class="intro-text">
+                        <h2 class="section-title">내가 꿈꾸는 XR Developer</h2>
+                        <p>저는 가상과 현실의 경계를 허무는 <span class="highlight">XR Developer</span>가 되고자 합니다. 
+                        단순히 기술을 구현하는 것을 넘어, 사람들에게 새로운 차원의 경험을 선사하고 
+                        메타버스 시대의 혁신을 이끄는 개발자를 꿈꿉니다.</p>
+                        
+                        <p>VR과 AR 기술을 통해 교육, 엔터테인먼트, 비즈니스 등 다양한 분야에서 
+                        실질적인 가치를 창출하는 것이 저의 목표입니다. 
+                        몰입감 있는 경험 설계와 직관적인 인터랙션 구현을 통해, 
+                        누구나 쉽게 접근할 수 있는 XR 콘텐츠를 만들고 있습니다.</p>
+                    </div>
+                    <div class="intro-visual">
+                        <div class="visual-cube">
+                            <div class="cube-face front">XR</div>
+                            <div class="cube-face back">DEV</div>
+                            <div class="cube-face right">3D</div>
+                            <div class="cube-face left">VR</div>
+                            <div class="cube-face top">AR</div>
+                            <div class="cube-face bottom">MR</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vision-section">
+            <div class="content-wrapper">
+                <h2 class="section-title">My Vision</h2>
+                <div class="vision-grid">
+                    <div class="vision-card">
+                        <div class="vision-icon">🌐</div>
+                        <h3>메타버스 혁신</h3>
+                        <p>차세대 메타버스 플랫폼을 위한 혁신적인 XR 솔루션을 개발하여, 
+                        사용자들이 더욱 자연스럽고 몰입감 있는 가상 세계를 경험할 수 있도록 합니다.</p>
+                    </div>
+                    <div class="vision-card">
+                        <div class="vision-icon">🎓</div>
+                        <h3>교육 혁명</h3>
+                        <p>VR/AR 기술을 활용한 교육 콘텐츠로 학습의 패러다임을 바꾸고, 
+                        누구나 언제 어디서든 실감나는 체험 학습을 할 수 있는 환경을 만들어갑니다.</p>
+                    </div>
+                    <div class="vision-card">
+                        <div class="vision-icon">🚀</div>
+                        <h3>기술 발전</h3>
+                        <p>Unity와 최신 XR 기술을 결합하여 성능과 사용자 경험을 극대화한 
+                        차세대 인터랙티브 애플리케이션을 지속적으로 연구하고 개발합니다.</p>
+                    </div>
+                    <div class="vision-card">
+                        <div class="vision-icon">🤝</div>
+                        <h3>커뮤니티 기여</h3>
+                        <p>오픈소스 프로젝트와 기술 공유를 통해 XR 개발 커뮤니티의 성장에 기여하고, 
+                        함께 발전하는 생태계를 만들어갑니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <div class="content-wrapper">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>XR Platforms</h3>
+                        <div class="skill-items">
+                            <div class="skill-badge">
+                                <span class="badge-icon">🥽</span>
+                                <span class="badge-text">Meta Quest</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-badge">
+                                <span class="badge-icon">👓</span>
+                                <span class="badge-text">Vision Pro</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-badge">
+                                <span class="badge-icon">📱</span>
+                                <span class="badge-text">AR Foundation</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Development</h3>
+                        <div class="skill-items">
+                            <div class="skill-badge">
+                                <span class="badge-icon">🎮</span>
+                                <span class="badge-text">Unity</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-badge">
+                                <span class="badge-icon">💻</span>
+                                <span class="badge-text">C#</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-badge">
+                                <span class="badge-icon">🌐</span>
+                                <span class="badge-text">Photon</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Tools & Design</h3>
+                        <div class="skill-items">
+                            <div class="skill-badge">
+                                <span class="badge-icon">🎨</span>
+                                <span class="badge-text">Figma</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-badge">
+                                <span class="badge-icon">📦</span>
+                                <span class="badge-text">GitHub</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-badge">
+                                <span class="badge-icon">🎬</span>
+                                <span class="badge-text">3D Modeling</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--progress: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="interests-section">
+            <div class="content-wrapper">
+                <h2 class="section-title">Areas of Interest</h2>
+                <div class="interests-grid">
+                    <div class="interest-card">
+                        <div class="interest-content">
+                            <h3>🥽 Virtual Reality</h3>
+                            <p>완전히 몰입 가능한 가상 환경을 만들어 사용자에게 현실과 구분할 수 없는 경험을 제공합니다. 
+                            Meta Quest와 같은 최신 VR 디바이스를 활용한 인터랙티브 콘텐츠 개발에 집중하고 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="interest-card">
+                        <div class="interest-content">
+                            <h3>📱 Augmented Reality</h3>
+                            <p>현실 세계에 디지털 정보를 자연스럽게 융합하여 일상을 더욱 풍부하게 만듭니다. 
+                            Vision Pro를 비롯한 AR 기술로 실용적인 솔루션을 개발하고 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="interest-card">
+                        <div class="interest-content">
+                            <h3>🌐 Multiplayer XR</h3>
+                            <p>Photon과 같은 네트워킹 솔루션을 활용하여 여러 사용자가 동시에 
+                            상호작용할 수 있는 소셜 XR 경험을 구현합니다.</p>
+                        </div>
+                    </div>
+                    <div class="interest-card">
+                        <div class="interest-content">
+                            <h3>🎮 Interactive Storytelling</h3>
+                            <p>Unity 엔진을 활용한 인터랙티브 스토리텔링으로 
+                            사용자가 직접 참여하고 영향을 미칠 수 있는 몰입형 내러티브를 창조합니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="content-wrapper">
+                <h2>Let's Build the Future Together</h2>
+                <p>메타버스의 미래를 함께 만들어가고 싶으신가요?</p>
+                <a href="/Web-project/contact/" class="btn btn-primary">
+                    <span>Contact Me</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 XR Developer. All rights reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="about-script.js"></script>
 </body>
 </html>
